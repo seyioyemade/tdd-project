@@ -28,8 +28,10 @@ describe Solver do
     subject { described_class.new }
 
     it 'returns the right string' do
-      expect(subject.fizzbuzz(4)).to eql '12fizz4'
-      expect(subject.fizzbuzz(10)).to eql '12fizz4buzzfizz78fizzbuzz'
+      expect(subject.fizzbuzz(15)).to eql 'fizzbuzz'
+      expect(subject.fizzbuzz(4)).to eql '4'
+      expect(subject.fizzbuzz(3)).to eql 'fizz'
+      expect(subject.fizzbuzz(5)).to eql 'buzz'
     end
   end
 end

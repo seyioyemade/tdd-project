@@ -17,24 +17,15 @@ class Solver
   end
 
   def fizzbuzz(num)
-    string = ''
-    (1..num).each do |i|
-      string += if (i % 3).zero? && (i % 5).zero?
-                  'fizzbuzz'
-                elsif (i % 3).zero?
-                  'fizz'
-                elsif (i % 5).zero?
-                  'buzz'
-                else
-                  i.to_s
-                end
+    if (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 3).zero?
+      'fizz'
+    elsif (num % 5).zero?
+      'buzz'
+    else
+      num.to_s
     end
-    string
   end
 end
 
-ex = Solver.new
-
-puts ex.factorial(3)
-
-puts ex.reverse('hello')
