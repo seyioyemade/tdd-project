@@ -108,4 +108,4 @@ If you like this project give it a star.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
 ## :memo: License <a name="license"></a>
-[License](https://github.com/seyioyemade/tdd-project/blob/main/LICENSE)
+This project is [MIT](./LICENSE) licensed.
