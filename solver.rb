@@ -10,6 +10,10 @@ class Solver
     end
     factorial
   end
+
+  def reverse(str)
+    str.reverse
+  end
 end
 
 
@@ -18,3 +22,5 @@ end
 ex = Solver.new
 
 puts ex.factorial(3)
+
+puts ex.reverse('hello')
