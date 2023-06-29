@@ -16,4 +16,12 @@ describe Solver do
       end
     end
   end
+
+  describe '#reverse' do
+    context 'takes one argument, a string word' do
+      it 'returns the reverse' do
+        expect(subject.reverse('seyi')).to eq('iyes')
+      end
+    end
+  end
 end

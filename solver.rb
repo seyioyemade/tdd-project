@@ -8,10 +8,12 @@ class Solver
     else
       (1..n).each { |i| factorial *=i }
     end
-
     factorial
   end
 end
+
+
+
 
 ex = Solver.new
 
