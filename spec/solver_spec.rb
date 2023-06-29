@@ -24,4 +24,13 @@ describe Solver do
       end
     end
   end
+
+  describe '#fizzbuzz' do
+    subject { described_class.new }
+
+    it 'returns the right string' do
+      expect(subject.fizzbuzz(4)).to eql '12fizz4'
+      expect(subject.fizzbuzz(10)).to eql '12fizz4buzzfizz78fizzbuzz'
+    end
+  end
 end
