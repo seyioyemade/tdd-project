@@ -1,7 +1,6 @@
 require_relative '../solver'
 
 describe Solver do
-
   describe '#factorial' do
     context 'with a non-negative integer' do
       it 'returns the correct factorial' do

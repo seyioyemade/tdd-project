@@ -1,13 +1,14 @@
 class Solver
-  def factorial(n)
+  def factorial(num)
     factorial = 1
-    if n < 0
+    if num.negative?
       raise ArgumentError, 'Input must be a non-negative integer'
-    elsif n == 0
+    elsif num.zero?
       1
     else
-      (1..n).each { |i| factorial *=i }
+      (1..num).each { |i| factorial *= i }
     end
+
     factorial
   end
 
@@ -31,9 +32,6 @@ class Solver
     string
   end
 end
-
-
-
 
 ex = Solver.new
 
